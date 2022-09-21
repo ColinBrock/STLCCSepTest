@@ -1,0 +1,26 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <script>
+        // TODO: create a handler
+        function setSearchEngine(){
+             console.log("hi");
+             
+        }
+    window.addEventListener("load", function(){
+        // TODO: register the handler
+        let form = document.getElementById("searchForm");
+        form.addEventListener("submit", setSearchEngine);
+    });
+    </script>
+</head>
+<body>
+    <form id="searchForm">
+        <input type="text" name="q">
+        <label>Google<input type="radio" name="engine"></label>
+        <label>DuckDuckGo<input type="radio" name="engine"></label>
+        <label>Bing<input type="radio" name="engine"></label>
+        <label>Ask<input type="radio" name="engine"></label>
+        <input type ="submit" value="Go!">
+    </form>
+</body>
